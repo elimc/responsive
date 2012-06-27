@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  <!-- Primary script !-->
+<script>window.jQuery || document.write('<script src="scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>  <!-- Fallback script !-->
+        
+
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->  <!-- Adds HTML5 support to IE6/7/8 !-->
+<!--[if lt IE 9]><script src="scripts/selectivizr.js"></script>  <![endif]-->  <!-- Adds CSS3 to IE6/7/8 !-->
+<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->  <!-- Adds media queries to IE6/7/8 !-->
+
+	<style type="text/css">
+
+/*
+HTML5 display definitions
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+		
+		html{
+			background-color: blue;
+		}
+		body{
+			width: 100%;
+			max-width: 960px;
+			min-width: 200px;
+			margin: 0 auto;
+			background-color: red;
+		}
+		header {
+			background-color: teal;
+			height: 100%;
+		}
+		nav {
+			background-color: gold;
+		}
+		section {
+			float: left;
+			width: 70%;
+			background-color: teal;
+		}
+		aside {
+			float: left;
+			width: 30%;
+			background-color: brown;
+		}
+		footer {
+			clear: both;
+			background-color: turquoise;
+		}
+		img{
+			max-width: 50%;
+		}
+		aside, section {
+			padding-bottom: 1000em;  /* extend the background color for both colums hack: http://bit.ly/QIW2B */
+			margin-bottom: -999em;
+		}
+		#content {
+			overflow: hidden;
+		}
+@media (max-width: 800px) {
+    html {
+        background-color: red;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        background-color: green;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        background-color: orange;
+    }
+		img {
+		display: none;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	html{
+		background-color: purple;
+		
+	}
+
+}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Title</h1>
+	</header>
+	<nav>nav here</nav>
+	<div id="content">
+		<section>
+			<img src="img/ECR3.jpg" alt="" />
+			<p>this is the main content</p>
+		</section>
+		<aside>this is the aside</aside>
+	</div>
+	<footer>this is the footer</footer>
+	
+</body>
+</html>
